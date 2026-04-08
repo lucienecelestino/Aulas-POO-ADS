@@ -34,7 +34,7 @@ public class Figura {
                     d = Integer.parseInt(JOptionPane.showInputDialog("Digite o quarto valor do lado do Retângulo"));
                 break;
             case 5:
-                JOptionPane.showMessageDialog(null, "Programa finalizado com Sucesso!!");
+                JOptionPane.showMessageDialog(null, "<html><font color = 'blue' size='7'> Programa finalizado com Sucesso!!");
                 System.exit(0);
         }
     }
@@ -88,7 +88,7 @@ public class Figura {
     
     //exibir o valor do objeto ponto
     public void exibirFigura(int w){
-        System.out.println("é um ponto de valor " + a);
+        JOptionPane.showMessageDialog(null,"é um ponto de valor " + a, "Mostrando um Ponto",0);
     }
     
     /**
@@ -99,16 +99,16 @@ public class Figura {
      */
      //exibir as coordenada do objeto linha
     public void exibirFigura(boolean x){
-        JOptionPane.showMessageDialog(null,"É uma linha de coordenadas "+ a + " e " + b);
+        JOptionPane.showMessageDialog(null,"É uma linha de coordenadas "+ a + " e " + b, "Mostrando um Linha",1);
     }
     
     //metodos para exibir dados do triangulo
     public void exibirFigura(String e){
-        JOptionPane.showMessageDialog(null,"É um triângulo com valor " + a + " " + b + " " + c);
+        JOptionPane.showMessageDialog(null,"É um triângulo com valor " + a + " " + b + " " + c, "Mostrando um Triângulo",2);
     }
      //metodos para exibir dados do retangulo
       public void exibirFigura(float f){
-        JOptionPane.showMessageDialog(null,"É um retângulo com valor " + a + " " + b + " " + c + " " + d);
+        JOptionPane.showMessageDialog(null,"É um retângulo com valor " + a + " " + b + " " + c + " " + d, "Mostrando um Retângulo",3);
     }
     
 }//fim da classe

@@ -1,4 +1,7 @@
 
+import javax.swing.JOptionPane;
+
+
 /**
  * Classe para instanciar objetos do tipo Figura (Ponto, Linha, Triângulo)
  * @author Luciene Celestino
@@ -32,10 +35,28 @@ public class Desenho {
         
         
         //Figura Genérica, com entrada de dados direto do usuário
-        while(true){
-        Figura figuragenerica = new Figura();
+       while(true){
+       Figura figuragenerica = new Figura();
         figuragenerica.exibirFigura();
-        }  
+    }
+         
+        
+        //configurando uma caixa de dialogo para mensgame
+        /* JOptionPane.showMessageDialog(1,2,3,4);
+        1 - this/null
+        2 - Texto que aparece dentro da janela
+        3 - Titulo da janela
+        4 - icone - pode variar de -1 a 3
+        //variação
+        -1 - sem icone
+        0 - Error - Icone de erro
+        1 - Information - Informação para o usuário;
+        2 - Warning - Aviso para o usuário
+        3 -  Question - Interrogação - Usuário entra com dado
+        */
+        
+        //testando os icones
+       //JOptionPane.showMessageDialog(null,"Mensagem ao usuario", "luciene", -1); 
         
     }//fim do main
 }//fim da classe

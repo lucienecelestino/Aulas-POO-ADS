@@ -20,7 +20,8 @@ public class Menu {
 "              6 - Hamburguer\n" +
 "              7 - Frambacon\n" +
 "              8 - FrangoCatupiry\n"+
-"              9 - Sair";
+"              9 - Pão Caseiro\n"+                
+"              10 - Sair";
         int opcao = 0;
     while(true){
         opcao = Integer.parseInt(JOptionPane.showInputDialog(null, msg, "Escolha sua PIZZA", 3));
@@ -42,17 +43,19 @@ public class Menu {
                 break;
             case 8: pizza = new FrangoCatupiry();
                 break;
-            case 9: System.exit(0);
+            case 9: pizza = new PaoCaseiro();
+                 break;
+            case 10: System.exit(0);
             
             default: JOptionPane.showConfirmDialog(null, "Seleção inexistente !!");
             opcao = 0;
         }//fim do swtch
         if(opcao != 0){
+             // Objeto polimorfico que prepara qualquer tipo de pizza
             forno.preparar(pizza);
+            System.out.println("================================================================");
         }
-        
-         // Objeto polimorfico que prepara qualquer tipo de pizza
-        forno.preparar(pizza);
+    
     }//fim do while
         
     }// fim do construtor
